@@ -1,9 +1,11 @@
-loadCSS( 'main.css' );
-loadCSS( 'https://fonts.googleapis.com/css?family=Lobster|PT+Sans&amp;subset=cyrillic' );
+'use strict';
 
-let navBtn = document.querySelector('.nav-btn');
-let nav = document.querySelector('.nav');
-let navContainer = nav.parentElement;
+loadCSS('main.css');
+loadCSS('https://fonts.googleapis.com/css?family=Lobster|PT+Sans&amp;subset=cyrillic');
+
+var navBtn = document.querySelector('.nav-btn');
+var nav = document.querySelector('.nav');
+var navContainer = nav.parentElement;
 
 navBtn.addEventListener('click', function (e) {
   e.preventDefault();
