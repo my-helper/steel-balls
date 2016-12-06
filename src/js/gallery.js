@@ -1,7 +1,7 @@
 function gallery({
   images = document.querySelectorAll('.gallery__img'),
   cover = document.querySelector('.gallery-cover'),
-  closeBrn = document.querySelector('.gallery-cover__close'),
+  closeBrn = document.querySelector('.popup-gallery__close'),
   mainImg = document.querySelector('.popup-gallery__main-img')
 } = {}) {
   for(let img of images) {
