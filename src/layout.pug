@@ -12,7 +12,11 @@ html(lang='ru')
         .row
           .col-xs-2.centralize-vertical.hidden-md-up
             button.nav-btn(type='button')
-              i.nav-btn__icon.fa.fa-bars(aria-hidden='true')
+              span.nav-btn__lines
+              span.nav-btn__lines
+              span.nav-btn__lines
+              span.nav-btn__lines
+              //i.nav-btn__icon.fa.fa-bars(aria-hidden='true')
           .col-xs-8.col-md-6.col-lg-3
             h1.main-heading
               a.main-heading__link(href='#') Steel Balls
@@ -20,7 +24,7 @@ html(lang='ru')
             a.header-phone(href='tel:+79006221818')
               i.header-phone__icon.fa.fa-phone.header-phone-icon-margin(aria-hidden='true')
               span.hidden-sm-down +7 900 622-18-18
-            button(type='button') Заказать звонок
+            button.hidden-sm-down(type='button') Заказать звонок
             .make-order.hidden
               h2 Сделать звонок
       .nav-container.hidden-sm-down

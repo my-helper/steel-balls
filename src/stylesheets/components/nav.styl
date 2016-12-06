@@ -12,14 +12,49 @@
   background none
   cursor pointer
   border none
-  border-radius 3px
+  border-radius 0
   padding 0
+  width 60px
+  height 45px
+  position relative
+  transform rotate(0deg)
+  transition .5s ease-in-out
   &:focus
     outline none
 
-.nav-btn__icon
-  color #000
-  font-size 34px
+.nav-btn__lines
+  display block
+  position absolute
+  height 5px
+  width 100%
+  background #111
+  border-radius 3px
+  opacity 1
+  left 0
+  transform rotate(0deg)
+  transition .25s ease-in-out
+  &:nth-child(1)
+    top 0
+  &:nth-child(2)
+    top: 18px
+  &:nth-child(3)
+    top: 18px
+  &:nth-child(4)
+    top: 36px
+
+.nav-btn__lines_open
+  &:nth-child(1)
+    top: 18px
+    width: 0
+    left: 50%
+  &:nth-child(2)
+    transform: rotate(45deg)
+  &:nth-child(3)
+    transform: rotate(-45deg)
+  &:nth-child(4)
+    top: 18px
+    width: 0
+    left: 50%
 
 .nav-btn__text
   color #000
