@@ -42,6 +42,7 @@ function cssMin() {
       'include css': true
     }))
     .pipe(plugins.uncss({
+      ignore: ['.nav-btn__lines_open:nth-child(1)', '.nav-btn__lines_open:nth-child(2)', '.nav-btn__lines_open:nth-child(3)', '.nav-btn__lines_open:nth-child(4)'],
       html: ['build/index.html']
     }))
     .pipe(plugins.cssnano())
