@@ -1,2 +1,3 @@
 fixedNav();
 anchorListen();
+gallery();

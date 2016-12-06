@@ -71,7 +71,7 @@ function concat() {
 }
 
 function cleanBuild() {
-  return del(['build/cssrelpreload.js', 'build/loadCSS.js', 'build/entry.js', 'build/main.js', 'build/toggle.js', 'build/load.js']);
+  return del(['build/cssrelpreload.js', 'build/loadCSS.js', 'build/entry.js', 'build/gallery.js', 'build/main.js', 'build/toggle.js', 'build/load.js']);
 }
 
 function htmlMin() {

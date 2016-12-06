@@ -16,7 +16,6 @@ html(lang='ru')
               span.nav-btn__lines
               span.nav-btn__lines
               span.nav-btn__lines
-              //i.nav-btn__icon.fa.fa-bars(aria-hidden='true')
           .col-xs-8.col-md-6.col-lg-3
             h1.main-heading
               a.main-heading__link(href='#') Steel Balls
@@ -94,7 +93,8 @@ html(lang='ru')
             p.syncer-text Текст такой текст
         .row-img
           .img-xs-8
-            img.gallery__img(src='img/red-chair.jpg' alt='скамья')
+            a.gallery__link(href='img/red-chair.jpg')
+              img.gallery__img(src='img/red-chair.jpg' alt='скамья')
             .gallery-title
               h3.gallery-heading Скамья лофт
           .img-xs-4
@@ -108,6 +108,9 @@ html(lang='ru')
             .gallery-title
               h3.gallery-heading Барные стулья
               span.gallery-client для Au Pont Rouge
+    .gallery-cover.hidden
+      button.gallery-cover__close(type='button') &#128473;
+      img.popup-gallery__main-img
     section.syncer
       .container
         .row

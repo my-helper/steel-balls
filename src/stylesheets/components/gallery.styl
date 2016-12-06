@@ -28,7 +28,30 @@ grid-flex(12, $gallery-margin, $gallery-suffixes, $default-breakpoints, '-img')
   max-width 100%
   display block
 
+.gallery__link
+  display block
+
 .row-img
   margin-top $gallery-margin * 2
   &:first-child
     margin-top 0
+
+.gallery-cover
+  background rgba(0,0,0, .75)
+  position: fixed
+  display: block
+  height: 100%
+  width: 100%
+  top: 0
+  z-index: 9
+
+.gallery-cover__close
+  background none
+  border none
+  cursor pointer
+  font-size 70px
+  float right
+  margin 50px 50px 0 0
+  line-height 1
+  &:focus
+    outline none
